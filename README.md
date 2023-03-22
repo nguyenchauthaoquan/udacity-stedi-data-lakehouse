@@ -22,8 +22,9 @@ Some of the early adopters have agreed to share their data for research purposes
 ### Implementation
 
 The python code for glue jobs have been implemented by python file in src folder generated automatically from glue studio
-The customer landing result and accelero landing result has been captured and saved into screenshots folder.
+The customer landing result and accelerometer landing result in Athena queries has been captured and saved into screenshots folder.
 The csv result files are the visualized results of the screenshots above, because of the limited screen resolution.
+The scripts folder represents the auto-generated sql of the glue tables from athena
 
 #### ** Glue Tables**
 ``` plantuml
