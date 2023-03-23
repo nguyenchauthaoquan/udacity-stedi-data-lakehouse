@@ -44,12 +44,12 @@ DropFields_node1679503544811 = DropFields.apply(
     transformation_ctx="DropFields_node1679503544811",
 )
 
-# Script generated for node S3 bucket
-S3bucket_node3 = glueContext.write_dynamic_frame.from_catalog(
+# Script generated for node Step Trainer Curated Zone
+StepTrainerCuratedZone_node3 = glueContext.write_dynamic_frame.from_catalog(
     frame=DropFields_node1679503544811,
     database="stedi-lakehouse",
     table_name="machine_learning_curated",
-    transformation_ctx="S3bucket_node3",
+    transformation_ctx="StepTrainerCuratedZone_node3",
 )
 
 job.commit()
