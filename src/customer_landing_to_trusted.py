@@ -35,10 +35,10 @@ ApplyFilterMapping_node2 = Filter.apply(
 )
 
 # Script generated for node Drop Duplicates
-DropDuplicates_node1679497037395 = DynamicFrame.fromDF(
+DropDuplicates_node1679540688547 = DynamicFrame.fromDF(
     ApplyFilterMapping_node2.toDF().dropDuplicates(["email"]),
     glueContext,
-    "DropDuplicates_node1679497037395",
+    "DropDuplicates_node1679540688547",
 )
 
 # Script generated for node Customer Trusted Zone
@@ -54,5 +54,5 @@ CustomerTrustedZone_node3.setCatalogInfo(
     catalogDatabase="stedi-lakehouse", catalogTableName="customer_trusted"
 )
 CustomerTrustedZone_node3.setFormat("json")
-CustomerTrustedZone_node3.writeFrame(DropDuplicates_node1679497037395)
+CustomerTrustedZone_node3.writeFrame(DropDuplicates_node1679540688547)
 job.commit()
